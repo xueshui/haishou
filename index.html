@@ -125,6 +125,45 @@
       border: 1px solid #b47be0;
     }
 
+    /* ---------- 哔哩哔哩关注按钮 ---------- */
+    .bili-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #fb7299;           /* B站标志性粉色 */
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 0.75rem 2rem;
+      border-radius: 60px;
+      border: 2px solid #ffb3cc;
+      box-shadow: 0 3px 0 #a04b6c;   /* 扁平硬阴影 */
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s, box-shadow 0.1s;
+      letter-spacing: 0.5px;
+      margin: 0.6rem 0 0.2rem;
+      cursor: pointer;
+    }
+
+    .bili-btn:hover {
+      background: #ff8cb0;
+      border-color: #ffe0ec;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 0 #a04b6c;
+    }
+
+    .bili-btn:active {
+      transform: translateY(2px);
+      box-shadow: 0 1px 0 #a04b6c;
+    }
+
+    .bili-btn .bili-icon {
+      font-size: 1.3rem;
+      line-height: 1;
+      filter: drop-shadow(0 1px 0 #a04b6c);
+    }
+
     /* ---------- 自我介绍 + 游戏标签 区块 ---------- */
     .intro-section {
       width: 100%;
@@ -269,6 +308,11 @@
       .intro-section {
         padding: 1.2rem 1.2rem;
       }
+
+      .bili-btn {
+        font-size: 1rem;
+        padding: 0.65rem 1.4rem;
+      }
     }
 
     /* 图片加载失败时显示占位色块 */
@@ -291,6 +335,11 @@
       <span>QQ</span>
       <span class="qq-number">3431982860</span>
     </div>
+
+    <!-- 哔哩哔哩关注按钮（新标签页打开） -->
+    <a class="bili-btn" href="https://b23.tv/Vxgl7Tp" target="_blank" rel="noopener noreferrer">
+      <span class="bili-icon">📺</span> 哔哩哔哩 · 关注我
+    </a>
 
     <!-- 自我介绍 + 游戏喜好 -->
     <div class="intro-section">
